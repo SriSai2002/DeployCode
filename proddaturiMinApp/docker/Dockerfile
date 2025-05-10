@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copy everything
-COPY . .
+COPY .. .
 
 # Package the app using Maven Wrapper
 RUN ./mvnw clean package -DskipTests
